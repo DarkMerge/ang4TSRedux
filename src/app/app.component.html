@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
   <a class="navbar-brand" routerLink="/dashboard">Dashboard</a>
   <ul class="nav nav-pills">
     <li class="nav-item">
@@ -6,10 +6,10 @@
     </li>
   </ul>
   <div class="navbar-nav">
-    <a class="nav-item nav-link">Logout</a>
+    <a class="nav-item nav-link" routerLink="/login">Logout</a>
   </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container-fluid main-container">
   <router-outlet></router-outlet>
 </div>

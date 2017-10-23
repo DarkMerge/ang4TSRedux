@@ -1,0 +1,23 @@
+.authorization-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-bottom: 56px;
+
+  .authorization-form {
+    display: block;
+    width: 400px;
+    max-width: 100%;
+
+    .authorization-form-btns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      > .btn {
+        width: 47%;
+      }
+    }
+  }
+}

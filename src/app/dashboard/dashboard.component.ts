@@ -4,8 +4,6 @@ import { ArticlesService } from '../articles/articles.service';
 
 import { ArticleModel } from '../articles/article-model';
 
-import * as moment from 'moment';
-
 @Component({
   selector: 'app-dashboard',
   providers: [ ArticlesService ],
@@ -26,7 +24,6 @@ export class DashboardComponent implements OnInit {
   getArticles() {
     this.articlesService.getLatestArticles().then(articles => {
       this.articles = articles;
-      this.articles.forEach((item) => item.date = moment().format('DD/MM/YYYY - hh:mm:ss'));
     });
   }
 
