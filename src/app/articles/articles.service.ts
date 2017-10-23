@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 
+import { ArticleModel } from './article-model';
+
 @Injectable()
 export class ArticlesService {
 
   constructor() { }
 
-  getLatestArticles(): Promise<any[]> {
+  getLatestArticles(): Promise<ArticleModel[]> {
     return Promise.resolve([
       {
         title: 'Article 1',

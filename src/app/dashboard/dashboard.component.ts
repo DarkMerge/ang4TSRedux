@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { ArticlesService } from '../articles/articles.service';
 
+import { ArticleModel } from '../articles/article-model';
+
 import * as moment from 'moment';
 
 @Component({
@@ -11,7 +13,7 @@ import * as moment from 'moment';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  articles: any[];
+  articles: ArticleModel[];
 
   constructor(private articlesService: ArticlesService) {
     console.log(articlesService);
